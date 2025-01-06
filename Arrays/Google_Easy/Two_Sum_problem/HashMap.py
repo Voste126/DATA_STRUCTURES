@@ -25,31 +25,6 @@
 # -109 <= target <= 109
 # Only one valid answer exists.
 
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-
-        " optimize the solution"
-
-        """
-        1. sorting 
-        2.check the values smaller than the target
-        3.iterate the values 
-
-        1.Binary tree - works for sorted arrays
-        """
-# Using Brute force solution  time complexity is O(n^2)
-# The brute force approach is simple: iterate through each element x and find if there is another value that equals to target - x.      
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i] + nums[j] ==target:
-                    return [i,j]
-
-
 # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 # Use of a hash map- this is a datastucture the stores key-value pairs. It is a collection of items where each item is stored as a key-value pair.
 class Solution(object):
