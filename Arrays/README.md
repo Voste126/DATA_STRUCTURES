@@ -1,6 +1,3 @@
-# DATA STRUCTURES
-
-```markdown
 # Array Problems - Learning Data Structures
 
 Welcome to my journey of mastering data structures! This repository contains solutions and explanations for some classic array problems, categorized by difficulty level. Dive in, explore, and learn along with me!
@@ -13,11 +10,13 @@ Welcome to my journey of mastering data structures! This repository contains sol
 Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.  
 
 **Constraints:**
+
 - Each input has exactly one solution.
 - You may not use the same element twice.
 - The solution can be returned in any order.
 
-### Example:
+### Example
+
 ```plaintext
 Input: nums = [2,7,11,15], target = 9  
 Output: [0,1]  
@@ -30,7 +29,7 @@ Output: [1,2]
 
 Input: nums = [3,3], target = 6  
 Output: [0,1]
-```
+
 
 **Constraints:**
 
