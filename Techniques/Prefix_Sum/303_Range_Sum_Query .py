@@ -10,7 +10,7 @@
 # Example 1:
 
 # Input
-# ["NumArray", "sumRange", "sumRange", "sumRange"]
+# ["NumArray", "sumRange", "sumRange","sumRange"]
 # [[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]
 # Output
 # [null, 1, -1, -3]
@@ -38,4 +38,11 @@ class NumArray(object):
         :type right: int
         :rtype: int
         """
+
         return self.prefix_sum[right +1] - self.prefix_sum[left]
+    
+if __name__ == "__main__":
+    numArray = NumArray([-2, 0, 3, -5, 2, -1])
+    # Call sumRange with sample ranges
+    print("Sum [0..2] =", numArray.sumRange(0, 2))
+    print("Sum [2..5] =", numArray.sumRange(2, 5))
